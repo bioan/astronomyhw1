@@ -79,7 +79,6 @@ const Twentieth = ({classes}) => {
           Galati observatory
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-		  The star can be observed between the two yellow lines. The north is upside of the picture, and the east is in the right side.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -102,7 +101,7 @@ const Twentieth = ({classes}) => {
           Galati observatory
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-		  Phase plot for Barlad V1.
+		  The star can be observed between the two yellow lines. The north is upside of the picture, and the east is in the right side.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -122,7 +121,7 @@ const Twentieth = ({classes}) => {
           Galati observatory
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-		  The phase of the star Barlad V1 close to the Perseus constellation.
+		  Phase plot for Barlad V1.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -142,6 +141,7 @@ const Twentieth = ({classes}) => {
           Galati observatory
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
+		  The phase of the star Barlad V1 close to the Perseus constellation.
           </Typography>
         </CardContent>
       </CardActionArea>
