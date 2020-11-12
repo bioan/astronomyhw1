@@ -26,7 +26,7 @@ const Twentieth = ({classes}) => {
         <CardMedia
           component='img'
           alt='Galati Observatory'
-          image='/BarladPre.jpeg'
+          image='/BarladPre.png'
           title='Galati Observatory'
           style={{maxWidth: '400px'}}
         />
@@ -45,7 +45,7 @@ const Twentieth = ({classes}) => {
         <CardMedia
           component='img'
           alt='Galati Observatory'
-          image='/BarladPost.jpeg'
+          image='/BarladPost.png'
           title='Galati Observatory'
           style={{maxWidth: '400px'}}
         />
