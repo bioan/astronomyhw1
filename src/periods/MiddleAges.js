@@ -17,7 +17,7 @@ const MiddleAges = ({classes}) => {
           description='Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit'
           title='Maximilian Hell observing a Venus transit'
           image='/MaximilianHell.jpg' 
-          style={{maxWidth: '400px'}}/>
+      />
 
       </Typography>
 

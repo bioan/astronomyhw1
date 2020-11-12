@@ -20,7 +20,7 @@ const Nineteenth = ({classes}) => {
 
       <Typography paragraph>
       1829,1830 - The first romanian astronomy textbooks were written, by A. Marin and Gheorghe Asachi respectively.
-      <Card style={classes.root} description='First Romanian astronomy book written by Gh. Asachi and A. Marin' image='/AsachiBook.png' style={{maxWidth: '400px'}}/>
+      <Card style={classes.root} description='First Romanian astronomy book written by Gh. Asachi and A. Marin' image='/AsachiBook.png' />
       
       </Typography>
 

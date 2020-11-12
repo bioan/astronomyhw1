@@ -72,7 +72,7 @@ const Twentieth = ({classes}) => {
       This was the first time in the history of Romanian astronomy when a variable star rotating ellipsoids(ELL) was found.
       The astronomical observer from Galati:
 
-      <Card style={classes.root} title='Galati Observatory' image='/GalatiObservatory.jpeg' style={{maxWidth: '400px'}}/>
+      <Card style={classes.root} title='Galati Observatory' image='/GalatiObservatory.jpeg' />
       
       </Typography>
 
