@@ -23,13 +23,14 @@ const MiddleAges = ({classes}) => {
           alt='Maximilian Hell observing a Venus transit'
           image='/MaximilianHell.jpg'
           title='Maximilian Hell observing a Venus transit'
+          style={{maxWidth: '400px'}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
           Maximilian Hell
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-          Dressed in Sami clothing during his stay at Vardø in 1769 to observe the Venus transit
+          Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -41,7 +42,7 @@ const MiddleAges = ({classes}) => {
       </Typography>
 
       <Typography paragraph>
-      1795 - Opening of the second observatory at Alba Iulia, by Bishop Ignatius Batthyany(later closed in 1860 for unknown reasons).
+      1795 - Opening of the second observatory at Alba Iulia, by Bishop Ignatius Batthyany, a self described "zealous protector and promoter of the sciences in Transylvania". The observatory was later closed in 1860 for unknown reasons.
       </Typography>
     </main>
   )
