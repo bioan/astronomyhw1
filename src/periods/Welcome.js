@@ -6,7 +6,7 @@ const Welcome = ({classes}) => {
     <main className={classes.content}>
       <div className={classes.toolbar} />
       <Typography paragraph>
-        A project by Alex Gabor, Cristian Savin and Ioan Botez
+        A project by Alex Gabor, Cristian Savin and Ioan Botez that attempts to analyze the history of astronomy in Romania
       </Typography>
 
       <Typography paragraph>
