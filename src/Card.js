@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 
 const Card = ({style, description, title, image}) => {
   return (
-    <MCard className={style}>
+    <MCard className={style} style={{margin: 'auto', width: '50%'}}>
       <CardActionArea>
         <CardMedia
           component='img'

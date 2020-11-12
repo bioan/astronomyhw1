@@ -56,7 +56,7 @@ const Twentieth = ({classes}) => {
 
     <Card style={classes.root} {...prepostData[galaxy]} />
     
-    <div>
+    <div style={{margin: 'auto', width: '50%'}}>
     {prepostData.map( (item, idx)=> 
       <Button variant="contained" color="primary" onClick={()=> setGalaxy(idx)}>
         {item.buttonLabel}
@@ -80,11 +80,13 @@ const Twentieth = ({classes}) => {
       2019 - The discovery of variable star Barlad V1 was a discovery by accident since The Astronomical Observatory from Barlad was testing, for the first time, the equipment of the center and has chosen, randomly, a variable star that was close to Perseus. Tests were conducted in order to see if the equipment in the astronomical observatory can detect variable or even exoplanet stars. The discovery was made on the night of 5 december 2019, and was made oficial only on 30 december of the same year.
       
       <Card style={classes.root} {...barladData[barlad]} />
+      <div style={{margin: 'auto', width: '50%'}}>
       {barladData.map((item, idx) =>
         <Button variant="contained" color="primary" onClick={()=> setBarlad(idx)}>
           {item.buttonLabel}
         </Button>
       )}
+      </div>
       </Typography>
     </main>
   )

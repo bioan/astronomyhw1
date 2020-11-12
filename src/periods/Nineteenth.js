@@ -1,9 +1,10 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
+// import Card from '@material-ui/core/Card'
+// import CardActionArea from '@material-ui/core/CardActionArea'
+// import CardContent from '@material-ui/core/CardContent'
+// import CardMedia from '@material-ui/core/CardMedia'
+import Card from '../Card'
 
 const Nineteenth = ({classes}) => {
   return (
@@ -19,22 +20,8 @@ const Nineteenth = ({classes}) => {
 
       <Typography paragraph>
       1829,1830 - The first romanian astronomy textbooks were written, by A. Marin and Gheorghe Asachi respectively.
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          alt='First Romanian astronomy book written by Gh. Asachi and A. Marin'
-          image='/AsachiBook.png'
-          title='First Romanian astronomy book written by Gh. Asachi and A. Marin'
-          style={{maxWidth: '400px'}}
-        />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-          First Romanian astronomy book written by Gh. Asachi and A. Marin
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      </Card>
+      <Card style={classes.root} description='First Romanian astronomy book written by Gh. Asachi and A. Marin' image='/AsachiBook.png' style={{maxWidth: '400px'}}/>
+      
       </Typography>
 
       <Typography paragraph>

@@ -1,9 +1,6 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
+import Card from '../Card'
 
 const MiddleAges = ({classes}) => {
   return (
@@ -16,25 +13,12 @@ const MiddleAges = ({classes}) => {
       <Typography paragraph>
       1759 - The construction, led by Maximilian Hell, of the astronomical tower in Transilvania was complete(later destroyed by flames in 1798).
       <br></br>
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          alt='Maximilian Hell observing a Venus transit'
-          image='/MaximilianHell.jpg'
+      <Card style={classes.root} 
+          description='Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit'
           title='Maximilian Hell observing a Venus transit'
-          style={{maxWidth: '400px'}}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          Maximilian Hell
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      </Card>
+          image='/MaximilianHell.jpg' 
+          style={{maxWidth: '400px'}}/>
+
       </Typography>
 
       <Typography paragraph>
