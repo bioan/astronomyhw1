@@ -6,6 +6,10 @@ const Welcome = ({classes}) => {
     <main className={classes.content}>
       <div className={classes.toolbar} />
       <Typography paragraph>
+        A project by Alex Gabor, Cristian Savin and Ioan Botez
+      </Typography>
+
+      <Typography paragraph>
         In the Romanian space, astronomy went hand in hand with religion, the first astronomer considered to be the monk Dionisie Exiguus who lived between the 5th and 6th centuries in Tomis, present-day Constanța(a Romanian city). Astronomers consider him the inventor of the Christian era and the establishment of year 1 of the current calendar.
         The monasteries were centers of culture and education before the 18th century. 
       </Typography>
