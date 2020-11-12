@@ -29,7 +29,7 @@ const MiddleAges = ({classes}) => {
           Maximilian Hell
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-           Observing a Venus transit
+          Dressed in Sami clothing during his stay at Vardø in 1769 to observe the Venus transit[1]
           </Typography>
         </CardContent>
       </CardActionArea>
