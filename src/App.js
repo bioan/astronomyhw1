@@ -8,6 +8,7 @@ import Twentieth from './periods/Twentieth'
 import Recent from './periods/Recent'
 import MyDrawer from './Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Conclusion from "./periods/Conclusion";
 
 const drawerWidth = 240;
 
@@ -61,6 +62,9 @@ export default function PermanentDrawerLeft() {
         </Route>
         <Route path='/recent'>
           <Recent classes={classes}/>
+        </Route>
+        <Route path='/conclusion'>
+          <Conclusion classes={classes}/>
         </Route>
       </Switch>
       </div>
