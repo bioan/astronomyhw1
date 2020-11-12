@@ -1,5 +1,9 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography';
+import Typography from '@material-ui/core/Typography'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
 
 const Nineteenth = ({classes}) => {
   return (
@@ -8,13 +12,29 @@ const Nineteenth = ({classes}) => {
       <Typography paragraph>
       1823 - A rich poet named Costache Conachi bought a telescope(focal length of 2m and a mirror diameter of 157mm) from Vienna. This telescope was used by students in their practical studies. Later the telescope was donated(again) to the Observatory of Iasi.
       </Typography>
-      
+
       <Typography paragraph>
       1828-1832 - New observations were made, determining the geographical coordinates of some of the biggest cities in Romania(of that time). Cities like Iași, Galaţi(again), Bucharest, Călăraşi, Craiova, Constanţa, Calafat.
       </Typography>
 
       <Typography paragraph>
       1829,1830 - The first romanian astronomy textbooks were written, by A. Marin and Gheorghe Asachi respectively.
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          component='img'
+          alt='First Romanian astronomy book written by Gh. Asachi and A. Marin'
+          image='/AsachiBook.png'
+          title='First Romanian astronomy book written by Gh. Asachi and A. Marin'
+          style={{maxWidth: '400px'}}
+        />
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+          First Romanian astronomy book written by Gh. Asachi and A. Marin
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      </Card>
       </Typography>
 
       <Typography paragraph>
