@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
+// import Card from '@material-ui/core/Card'
+// import CardActionArea from '@material-ui/core/CardActionArea'
+// import CardContent from '@material-ui/core/CardContent'
+// import CardMedia from '@material-ui/core/CardMedia'
+import Button from '@material-ui/core/Button'
+import Card from '../Card'
+
+const prepost = [{
+  image: '/BarladPre.png',
+  title: '',
+  description: ''
+  },
+  {
+  image: '/BarladPost.png',
+  title: '',
+  description: ''
+  }
+]
 
 const Twentieth = ({classes}) => {
+  const [galaxy, setGalaxy] = useState(0)
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
@@ -20,44 +35,18 @@ const Twentieth = ({classes}) => {
       </Typography>
       <Typography paragraph>
       2015- A new bright red, from a galaxy located about 21 million light-years from Earth, was discovered by specialists at the Barlad Astronomical Observatory and registered at the US Central Bureau of Astronomical Telegrams, being the biggest discovery in this field in Romania.
+
+    <Card style={classes.root} {...prepost[galaxy]} />
+    <div>
+      <Button variant="contained" color="primary" onClick={()=> setGalaxy(0)}>
+        Before
+      </Button>
+
+      <Button variant="contained" color="primary" onClick={()=> setGalaxy(1)}>
+        After
+      </Button>
+    </div>
       
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          alt='Galati Observatory'
-          image='/BarladPre.png'
-          title='Galati Observatory'
-          style={{maxWidth: '400px'}}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Pre descovery
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      </Card>
-      
-      <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          alt='Galati Observatory'
-          image='/BarladPost.png'
-          title='Galati Observatory'
-          style={{maxWidth: '400px'}}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Post discovery
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      </Card>
 
       </Typography>
 
@@ -65,7 +54,7 @@ const Twentieth = ({classes}) => {
       2016-2017- Between October 2016 and November 2017, the variable stars Galati V6 and Galati V8 – V13, by the team formed by: Ovidiu Tercu and Andrei-Marian Stoian, aged only 16 years old, member of the "Călin Popovici" Astroclub from Galaţi. In order to discover these variable stars, there were 28 performed nights of astronomical observations (photometric survey) in the following time periods: July - November 2012, October - November 2014 and October 2016. The Galati V6 binary system has a magnitude variation between 12.72 - 12.81 in V, and the period is 0.386833 days (9.2840 hours) and is a rotating ellipsoidal variable star (ELL). This binary system was discovered in 2017 in the constellation Crater, based on observations made previous (photometric survey). Rotating ellipsoidal variable stars are extrinsic variable stars, more little known, and are binary systems, close, with ellipsoidal components, but without eclipses. The amplitude of these systems does not exceed 0.1 magnitudes in V. 
       This was the first time in the history of Romanian astronomy when a variable star rotating ellipsoids(ELL) was found.
       The astronomical observer from Galati:
-      <Card className={classes.root}>
+      {/* <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component='img'
@@ -142,7 +131,7 @@ const Twentieth = ({classes}) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      </Card>
+      </Card> */}
       </Typography>
     </main>
   )
