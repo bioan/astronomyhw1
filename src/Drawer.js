@@ -1,7 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import Drawer from '@material-ui/core/Drawer';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
@@ -17,7 +16,6 @@ const stringToUri = string => string.toLowerCase().replace(' ', '-')
 
 const MyDrawer = ({classes}) => {
   let history = useHistory();
-  // console.log(props)
 
   return (
     <>
