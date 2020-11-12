@@ -37,7 +37,7 @@ const MyDrawer = ({classes}) => {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['Welcome', 'Middle Ages', 'Nineteenth Century', 'Twentieth Century', 'Recent'].map((text, index) => (
+          {['Welcome', 'Middle Ages', 'Nineteenth Century', 'Twentieth Century', 'Recent', 'Conclusion'].map((text, index) => (
             <ListItem button key={text} onClick={() => history.push(stringToUri(text))}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
