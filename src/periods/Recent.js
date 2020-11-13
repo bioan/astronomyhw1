@@ -36,9 +36,12 @@ const barladData = [{
   buttonLabel: 'Position'
 }]
 
+const galati = [{
+  title: 'Galati Observatory',
+  image: '/GalatiObservatory.jpeg'
+}]
+
 const Twentieth = ({classes}) => {
-  const [galaxy, setGalaxy] = useState(0)
-  const [barlad, setBarlad] = useState(0)
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
@@ -54,17 +57,7 @@ const Twentieth = ({classes}) => {
       <Typography paragraph>
       2015- A new bright red, from a galaxy located about 21 million light-years from Earth, was discovered by specialists at the Barlad Astronomical Observatory and registered at the US Central Bureau of Astronomical Telegrams, being the biggest discovery in this field in Romania.
 
-    <Card style={classes.root} {...prepostData[galaxy]} />
-    
-    <div style={{margin: 'auto', width: '50%'}}>
-    {prepostData.map( (item, idx)=> 
-      <Button variant="contained" color="primary" onClick={()=> setGalaxy(idx)}>
-        {item.buttonLabel}
-      </Button>
-    )}
-    </div>
-      
-
+    <Card style={classes.root} data={prepostData} />
       </Typography>
 
       <Typography paragraph>
@@ -72,21 +65,14 @@ const Twentieth = ({classes}) => {
       This was the first time in the history of Romanian astronomy when a variable star rotating ellipsoids(ELL) was found.
       The astronomical observer from Galati:
 
-      <Card style={classes.root} title='Galati Observatory' image='/GalatiObservatory.jpeg' />
+      <Card style={classes.root} data={galati} />
       
       </Typography>
 
       <Typography paragraph>
       2019 - The discovery of variable star Barlad V1 was a discovery by accident since The Astronomical Observatory from Barlad was testing, for the first time, the equipment of the center and has chosen, randomly, a variable star that was close to Perseus. Tests were conducted in order to see if the equipment in the astronomical observatory can detect variable or even exoplanet stars. The discovery was made on the night of 5 december 2019, and was made oficial only on 30 december of the same year.
       
-      <Card style={classes.root} {...barladData[barlad]} />
-      <div style={{margin: 'auto', width: '50%'}}>
-      {barladData.map((item, idx) =>
-        <Button variant="contained" color="primary" onClick={()=> setBarlad(idx)}>
-          {item.buttonLabel}
-        </Button>
-      )}
-      </div>
+      <Card style={classes.root} data={barladData} />
       </Typography>
     </main>
   )

@@ -2,6 +2,12 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Card from '../Card'
 
+const hell = [{
+  description: 'Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit',
+  title: 'Maximilian Hell observing a Venus transit',
+  image: '/MaximilianHell.jpg' 
+}]
+
 const MiddleAges = ({classes}) => {
   return (
     <main className={classes.content}>
@@ -13,11 +19,7 @@ const MiddleAges = ({classes}) => {
       <Typography paragraph>
       1759 - The construction, led by Maximilian Hell, of the astronomical tower in Transilvania was complete(later destroyed by flames in 1798).
       <br></br>
-      <Card style={classes.root} 
-          description='Dressed in Sami clothing during his stay at Vardø (Norway) in 1769 to observe the Venus transit'
-          title='Maximilian Hell observing a Venus transit'
-          image='/MaximilianHell.jpg' 
-      />
+      <Card data={hell} />
 
       </Typography>
 
