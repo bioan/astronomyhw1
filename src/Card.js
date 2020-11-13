@@ -64,7 +64,7 @@ const Card = ({ data }) => {
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        <img src={data[index].image} onClick={handleClose}/>
+        <img src={data[index].image} onClick={handleClose} alt={data[index].description} />
       </Modal>
       </div>
   )
