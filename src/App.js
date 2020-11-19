@@ -5,7 +5,6 @@ import Inspiration from './content/Inspiration'
 import Conclusion from './content/Conclusion'
 import DateTime from './content/DateTime'
 import Introduction from './content/Introduction'
-import Legacy from './content/Legacy'
 import Letters from './content/Letters'
 import Sketches from './content/Sketches'
 import References from "./content/References";
@@ -68,9 +67,6 @@ export default function PermanentDrawerLeft() {
         </Route>
         <Route path='/date-and-time'>
           <DateTime classes={classes}/>
-        </Route>
-        <Route path='/legacy'>
-          <Legacy classes={classes}/>
         </Route>
         <Route path='/places-of-residence'>
           <Places classes={classes}/>

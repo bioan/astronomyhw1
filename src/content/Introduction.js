@@ -1,7 +1,5 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
-import List from '@material-ui/core/List';
-
 
 const Introduction = ({classes}) => {
   return (
