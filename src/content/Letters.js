@@ -36,7 +36,7 @@ const letters = [
   {
   description: '813th letter',
   title: '',
-  image: '/letters.png',
+  image: '/letter6.png',
   buttonLabel: '6th'
   },
   {
