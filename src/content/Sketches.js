@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 const okok = [{
   description: 'Starry Night, F 1540 / JH 1732',
   title: '',
-  image: '/okok.png' 
+  image: '/okok.jpg' 
 }]
 
 const Sketches = ({classes}) => {
