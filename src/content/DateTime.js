@@ -64,7 +64,6 @@ const nightsky = [
     image: '/25.png',
     buttonLabel: '25th'
   },
-  
 ]
 
 const DateTime = ({classes}) => {
