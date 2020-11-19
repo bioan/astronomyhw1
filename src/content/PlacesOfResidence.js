@@ -49,7 +49,7 @@ const Places = ({classes}) => {
     <main className={classes.content}>
       <div className={classes.toolbar} />
       <Typography paragraph>
-      The parents of Vincent van Gogh were Anna Cornelia Carbentus (1819–1907) and Theodorus “Dorus” van Gogh (1822–1885). He was born on 30 March 1853 in the village of Zundert(Dutch province of North Brabant).
+      The parents of Vincent van Gogh were Anna Cornelia Carbentus (1819–1907) and Theodorus “Dorus” van Gogh (1822–1885). He was born on 30 March 1853 in the village of Zundert(Dutch province of North Brabant). Van Gogh lived in a number of places all-over the Europe, below is a timeline of when and where van Gogh lived.
       </Typography>
 
       <TableContainer component={Paper}>
