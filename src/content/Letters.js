@@ -87,7 +87,7 @@ const Letters = ({classes}) => {
     </Typography>
     <Typography paragraph>
       8. To Emile Bernard. Saint-Rémy-de-Provence, on or about Tuesday, 26 November 1889. (letter 822)
-      “However, once again I’m allowing myself to do stars too big, , new setback, and I’ve enough of that.”
+      “However, once again I’m allowing myself to do stars too big, new setback, and I’ve enough of that.”
       Now he is a bit negative about his work, “Starry night” but maybe he has a bit of influence because he cannot be that direct as with his brother? Or maybe he just changed his opinion on that matter.
     </Typography>
 	  <Card data={letters}/>
