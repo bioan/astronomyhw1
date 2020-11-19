@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router , Route, Switch } from 'react-router-dom'
-import { makeStyles } from '@material-ui/core/styles';
-import Welcome from './periods/Welcome'
-import MiddleAges from './periods/MiddleAges'
-import Nineteenth from './periods/Nineteenth'
-import Twentieth from './periods/Twentieth'
-import Recent from './periods/Recent'
+import { makeStyles } from '@material-ui/core/styles'
+import Inspiration from './content/Inspiration'
+import Conclusion from './content/Conclusion'
+import DateTime from './content/DateTime'
+import Introduction from './content/Introduction'
+import Legacy from './content/Legacy'
+import Letters from './content/Letters'
+import Sketches from './content/Sketches'
 import MyDrawer from './Drawer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Conclusion from "./periods/Conclusion";
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 const drawerWidth = 240;
 
@@ -34,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
   },
+  table: {
+    minWidth: 650,
+  },
 }));
 
 export default function PermanentDrawerLeft() {
@@ -46,22 +50,25 @@ export default function PermanentDrawerLeft() {
       <MyDrawer classes={classes} />
       <Switch>
         <Route exact path='/'>
-          <Welcome classes={classes} />
+          <Introduction classes={classes} />
         </Route>
-        <Route path='/welcome'>
-          <Welcome classes={classes} />
+        <Route path='/introduction'>
+          <Introduction classes={classes} />
         </Route>
-        <Route path='/twentieth-century'>
-          <Twentieth classes={classes} />
+        <Route path='/inspiration'>
+          <Inspiration classes={classes} />
         </Route>
-        <Route path='/nineteenth-century'>
-          <Nineteenth classes={classes}/>
+        <Route path='/sketches'>
+          <Sketches classes={classes}/>
         </Route>
-        <Route path='/middle-ages'>
-          <MiddleAges classes={classes}/>
+        <Route path='/letters'>
+          <Letters classes={classes}/>
         </Route>
-        <Route path='/recent'>
-          <Recent classes={classes}/>
+        <Route path='/date-and-time'>
+          <DateTime classes={classes}/>
+        </Route>
+        <Route path='/legacy'>
+          <Legacy classes={classes}/>
         </Route>
         <Route path='/conclusion'>
           <Conclusion classes={classes}/>

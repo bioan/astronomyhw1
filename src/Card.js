@@ -19,7 +19,6 @@ const useStyles = makeStyles({
   },
 });
 
-// const Card = ({style, description, title, image}) => {
 const Card = ({ data }) => {
 
   const classes = useStyles()

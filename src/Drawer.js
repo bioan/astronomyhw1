@@ -9,19 +9,18 @@ import Divider from '@material-ui/core/Divider'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 
-const stringToUri = string => string.toLowerCase().replace(' ', '-')
+const stringToUri = string => string.replace(/\s+/g, '-').toLowerCase();
 
 const MyDrawer = ({classes}) => {
   let history = useHistory();
-
   return (
     <>
       <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Typography variant="h6" noWrap>
-          Astronomy in Romania
+          Starry night
         </Typography>
       </Toolbar>
       </AppBar>
@@ -36,7 +35,7 @@ const MyDrawer = ({classes}) => {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['Welcome', 'Middle Ages', 'Nineteenth Century', 'Twentieth Century', 'Recent', 'Conclusion'].map((text, index) => (
+          {['Introduction', 'Inspiration', 'Sketches', 'Letters', 'Date and time', 'Legacy', 'Conclusion'].map((text, index) => (
             <ListItem button key={text} onClick={() => history.push(stringToUri(text))}>
               <ListItemIcon>{index > 0 && <ChevronRightIcon />}</ListItemIcon>
               <ListItemText primary={text} />
