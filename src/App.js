@@ -9,6 +9,7 @@ import Legacy from './content/Legacy'
 import Letters from './content/Letters'
 import Sketches from './content/Sketches'
 import References from "./content/References";
+import Places from './content/PlacesOfResidence'
 import MyDrawer from './Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline'
 
@@ -70,6 +71,9 @@ export default function PermanentDrawerLeft() {
         </Route>
         <Route path='/legacy'>
           <Legacy classes={classes}/>
+        </Route>
+        <Route path='/places-of-residence'>
+          <Places classes={classes}/>
         </Route>
         <Route path='/conclusion'>
           <Conclusion classes={classes}/>
