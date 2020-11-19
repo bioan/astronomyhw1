@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../Card'
 import Typography from '@material-ui/core/Typography'
 // import Card from '../Card'
 
