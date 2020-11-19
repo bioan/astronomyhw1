@@ -4,13 +4,26 @@ import Card from '../Card'
 
 const images = [
     {
+        image: '/StarryNightWhirl.png',
+        buttonLabel: 'Starry Night Wave'
+    },
+    {
         image: '/greatwave.jpg',
         buttonLabel: 'The Great Wave'
     },
+
+]
+
+const images2 = [
     {
-        image: '/StarryNightWave.png',
-        buttonLabel: 'Starry Night Whirl'
+        image: '/StarryNightWh.png',
+        buttonLabel: 'Starry Night Wave'
     },
+    {
+        image: '/Whiril.jpg',
+        buttonLabel: 'Whirlpool Galaxy'
+    },
+
 ]
 
 const Inspiration = ({classes}) => {
@@ -25,23 +38,6 @@ const Inspiration = ({classes}) => {
 
             <Typography paragraph>
                 The Great Wave by Hokusai and the Starry Night by Vincent van Gogh are two of the biggest masterpieces of the 19th century. The speculation that van Gogh was inspired by Hokusai’s painting is supported by a number of facts. First of all, van Gogh was a big admirer of Japanese print in general, having written a number of letters to his brother about japanese art, and how the art looks so alive, like you could feel it. Second of all, Vincent saw The Great Wave, some months before painting the Starry Night, and if we consider the speculation that The Great Wave was an actual inspiration for his own painting, it must’ve made a big impact on Vicent, to actually remember all those details months later down the path. Keep in mind that Vicent van Gogh’s love for this painting makes him one of the few people recorded to actually admire The Great Wave, before it being recognised as one of the best, if not the best,  piece of Japanese art.
-
-                {/*<Card className={classes.root}>*/}
-                {/*    <CardActionArea>*/}
-                {/*        <CardMedia*/}
-                {/*            component='img'*/}
-                {/*            alt='First Romanian astronomy book written by Gh. Asachi and A. Marin'*/}
-                {/*            image='/AsachiBook.png'*/}
-                {/*            title='First Romanian astronomy book written by Gh. Asachi and A. Marin'*/}
-                {/*            style={{maxWidth: '400px'}}*/}
-                {/*        />*/}
-                {/*        <CardContent>*/}
-                {/*            <Typography variant="body2" color="textSecondary" component="p">*/}
-                {/*                First Romanian astronomy book written by Gh. Asachi and A. Marin*/}
-                {/*            </Typography>*/}
-                {/*        </CardContent>*/}
-                {/*    </CardActionArea>*/}
-                {/*</Card>*/}
             </Typography>
 
             <Typography paragraph>
@@ -51,8 +47,10 @@ const Inspiration = ({classes}) => {
             <Card data={images}/>
 
             <Typography paragraph>
-                1880 - Constantin Căpităneanu drew a precise map of the country using binoculars for the latitudes, two refracting telescopes, a chronograph and several precision clocks.
+                The Whirlpool Galaxy of M51, was a sensation in the 19th century in Europe. It is believed that the Whirlpool Galaxy was an inspiration to van Gogh’s spiraling stars in Starry Night, painted 40+ years after the drawing of the Whirlpool Galaxy. The drawing, which had appeared in one of the best-selling books on French astronomy, is believed to have been either in the library of the asylum where van Gogh was staying or he simply saw it in Paris. The close resemblance between the Parson’s Whirlpool Galaxy and van Gogh’s drawing is presented in the images below.
             </Typography>
+
+            <Card data={images2}/>
         </main>
     )
 }
