@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    // maxWidth: 345,
   },
   media: {
     height: 140,
@@ -36,7 +36,7 @@ const Card = ({ data }) => {
           alt={data[index].description}
           image={data[index].image}
           title={data[index].title}
-          style={{maxWidth: '400px'}}
+          // style={{maxWidth: '400px'}}
           onClick={() => setModal(true)}
         />
         <CardContent>

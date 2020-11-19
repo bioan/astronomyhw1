@@ -31,6 +31,42 @@ const annotated = [{
   image: '/annotated.png' 
 }]
 
+const nightsky = [
+  {
+    image: '/18.png',
+    buttonLabel: '18th'
+  },
+  {
+    image: '/19.png',
+    buttonLabel: '19th'
+  },
+  {
+    image: '/20.png',
+    buttonLabel: '20th'
+  },
+  {
+    image: '/21.png',
+    buttonLabel: '21st'
+  },
+  {
+    image: '/22.png',
+    buttonLabel: '22nd'
+  },
+  {
+    image: '/23.png',
+    buttonLabel: '23rd'
+  },
+  {
+    image: '/24.png',
+    buttonLabel: '24th'
+  },
+  {
+    image: '/25.png',
+    buttonLabel: '25th'
+  },
+  
+]
+
 const DateTime = ({classes}) => {
   return (
     <main className={classes.content}>
@@ -87,6 +123,9 @@ const DateTime = ({classes}) => {
       while in the picture, it's a waning crescent. This would not happen until the 23rd at the earliest, which would put the rest of the stars 
       out of position.
     </Typography>
+
+    <Card data={nightsky}/>
+
     <Typography paragraph>
       Clearly, Starry night is not a perfectly accurate depiction of the night sky in that period. Whether Starry Night is a product of several days' worth of starlight, or perhaps Van Gogh "photoshopped" reality a little is hard to say. However, none of this makes it any less magical.
     </Typography>
